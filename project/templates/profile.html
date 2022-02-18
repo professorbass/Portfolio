@@ -1,0 +1,42 @@
+<!-- templates/profile.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}!
+</h1>
+
+<img src="static/pic.jpg" height="360px" width="360px" />
+<img src="static/pic-2.jpg" height="360px" width="360px" />
+<img src="static/pic-3.jpg" height="360px" width="360px" />
+<img src="static/pic-4.jpg" height="360px" width="360px" />
+<table>
+  <thead>
+  <tr>
+    <td>Name</td>
+    <td>Email</td>
+    <td>Phone</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>john</td>
+    <td>john@gmail.com</td>
+    <td>123456789</td>
+  </tr>
+
+  <tr>
+    <td>doe</td>
+    <td>doe@gmail.com</td>
+    <td>456987123</td>
+  </tr>
+
+  <tr>
+    <td>admin</td>
+    <td>admin@site.com</td>
+    <td>654321456</td>
+  </tr>
+  </tbody>
+</table>
+{% endblock %}
